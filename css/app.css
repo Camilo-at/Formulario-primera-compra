@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/*overlay*/
+.primera-compra-overlay {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000061;
+    margin: 0;
+    z-index: 9999999999;
+}
+/*overlay*/
+
+/*****primera parte ***/
+.primera-compra-overlay-content {
+    width: 60vw;
+    height: 80vh;
+    position: relative;
+}
+.primera-compra-content-parte-1 {
+    background-image: url("../assets/Rectangle\ 14.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.primera-compra-content-parte-1-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 10px 0 0;
+    cursor: pointer;
+}
+
+.icono-cerrar-primera-compra {
+    border: 1px solid #000;
+    padding: 6px;
+}
+
+.primera-compra-info-parte1 {
+    background-color: #fff;
+    width: 45%;
+    height: 100%;
+}
+
+.primera-compra-info-content-parte1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.primera-compra-title-parte1 {
+    font-size: 15px;
+}
+
+.primera-compra-subtitle-parte1 {
+    font-size: 2.7rem;
+    font-weight: bold;
+    margin: 8px 0;
+    color: #2F4A9C;
+}
+
+.primera-compra-button-parte1 {
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid #000;
+    background-color: #2D2C2F;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 7.5px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.primera-compra-button-parte1:hover {
+    background-color: #fff;
+    color: #2D2C2F;
+}
+
+.primera-compra-button-cerrar-parte1 {
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.primera-compra-content-parte-1-logo-mobile {
+    display: none;
+}
+
+.primera-compra-content-parte-1-logo-mobile-gray {
+    display: none;
+}
+
+
+@media screen and (max-width: 767px) {
+    .primera-compra-content-parte-1 {
+        padding: 0;
+        position: relative;
+    }
+    
+    .primera-compra-overlay-content {
+        height: 85vh;
+    }
+
+    .primera-compra-info-parte1 {
+        width: 100%;
+        height: 45%;
+        overflow: hidden;
+        position: absolute;
+        bottom: 0;
+        border-radius: 24px 24px 0 0;
+    }
+
+    .logo-girbaud {
+        display: none;
+    }
+
+    .primera-compra-info-content-parte1 {
+        margin-top: 0;
+    }
+
+    .icono-cerrar-primera-compra {
+        border: 0;
+        padding: 6px;
+        width: 1.3rem;
+    }
+
+    .primera-compra-subtitle-parte1 {
+        font-size: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .primera-compra-button-parte1 {
+        background-color: #2F4A9C;
+        transition: background-color 0.5s;
+    }
+
+    .primera-compra-button-parte1:hover {
+        background-color: #fff;
+        color: #2F4A9C;
+    }
+
+    .primera-compra-content-parte-1-logo-mobile-gray {
+        display: block;
+        background-color: #2D2C2F;
+        width: 100%;
+        height: 10%;
+    }
+
+    .primera-compra-content-parte-1-logo-mobile {
+        display: block;
+        background-color: #fff;
+        height: 18%;
+        padding: 15px;
+    }
+}
+
+/*****primera parte ***/
+
+/****segunda parte ***/
+.primera-compra-overlay-content-parte2 {
+        width: 70vw;
+        height: 90vh;
+}
+
+.primera-compra-contenedor-parte-2 {
+    width: 100%;
+    height: 100%;
+}
+
+.primera-compra-content-parte-2 {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.primera-compra-imagen-parte-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.primera-compra-formulario-parte-2 {
+    background-color: #fff;
+    overflow: auto;
+}
+
+.primera-compra-info-content-parte2 {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.logo-girbaud-parte2 {
+    margin: 0 auto 30px auto;
+}
+
+.primera-compra-content-parte-2-formulario {
+    width: 100%;
+}
+
+.primera-compra-content-parte-2-legend {
+    font-size: 1.9rem;
+    color: #2F4A9C;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.contenedor-input {
+    width: 100%;
+    border: 1px solid #CFD2D4;
+    padding: 6px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.contenedor-input label {
+    font-size: 12px;
+    color: #5E6366;
+}
+
+.contenedor-input input::placeholder {
+    color: #ABAFB1;
+}
+
+.contenedor-input input {
+    padding: 5px;
+    border: 0;
+    outline: 0;
+    font-size: 14px;
+    color: #ABAFB1;
+}
+
+.contenedor-input-check {
+    margin: 30px 0;
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+}
+
+.primera-compra-checkbox {
+   width: 20px; 
+}
+
+.primera-compra-button-parte2 {
+    width: 100%;
+    margin: 0 auto;
+    border: 2px solid transparent; /* Inicialmente un borde transparente */
+    background-color: #2F4A9C;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 7.5px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    margin-bottom: 30px;
+}
+
+.primera-compra-button-parte2:hover {
+    background-color: #fff;
+    color: #2F4A9C;
+    border: 2px solid #2F4A9C; /* Cambia el color del borde en hover */
+}
+
+.primera-compra-button-cerrar-parte2 {
+    text-align: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.icono-cerrar-primera-compra-parte2 {
+    border: 1px solid #000;
+    padding: 4px;
+}
+
+.primera-compra-content-parte-2-logo-mobile-gray {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .primera-compra-content-parte-2 {
+        grid-template-columns: 100%;
+    }
+    .primera-compra-imagen-parte-2 {
+        display: none;
+    }
+    .primera-compra-content-parte-2-logo-mobile-gray {
+        background-color: #2D2C2F;
+        width: 100%;
+        height: 6rem;
+        display: block;
+    }
+}
+
+/***animaciones**/
+.mostrar-parte2 {
+    transform: translateX(0%);
+    transition: transform 0.5s;
+}
+
+.primera-compra-overlay-content-parte2 {
+    transform: translateX(100%);
+    transition: transform 0.5s;
+    opacity: 0;
+}
